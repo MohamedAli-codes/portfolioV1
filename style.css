@@ -246,16 +246,21 @@ p {
   justify-content: center;
   align-items: center;
   font-size: 20px;
-  color: var(--secondary-color);
   width: 40px;
   height: 40px;
   background: transparent;
-  border: 2px solid var(--secondary-color);
   border-radius: 5px;
   position: relative;
   z-index: 1;
   overflow: hidden;
   transition: 0.5s ease;
+  color: rgb(48, 48, 48);
+  border: 2px solid rgb(42, 42, 42);
+}
+
+.icons-section a.active-link {
+  color: var(--secondary-color);
+  border: 2px solid var(--secondary-color);
 }
 
 .icons-section a::after {
@@ -269,11 +274,12 @@ p {
   z-index: -1;
   transition: 0.5s ease;
 }
-.icons-section a:hover {
+
+.icons-section a.active-link:hover {
   color: var(--primary-color);
 }
 
-.icons-section a:hover::after {
+.icons-section a.active-link:hover::after {
   width: 100%;
 }
 
